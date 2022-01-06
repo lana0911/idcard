@@ -1,4 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+// icomoon
+import '../src/assets/icon/icomoon/style.css'
 
-createApp(App).mount('#app')
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+const app = createApp(App)
+app
+    .use(ElementPlus)
+    .mount('#app')
